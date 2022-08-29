@@ -11,8 +11,8 @@ router.get('/blog', async function (req, res, next){
     blog = blog.map(blog =>{
         if (blog.img_id){
             const imagen = cloudinary.url(blog.img_id, {
-                width: 960,
-                height: 200,
+                width: 320,
+                height: 180,
                 crop: 'fill'
             });
             return {

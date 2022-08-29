@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-6 offset-3">
             <h4>Modificar la noticia</h4>
-            <form method="post" action="/admin/blog/modificar" style="max-width: 500px;">
+            <form method="post" action="/admin/blog/modificar" style="max-width: 500px;" enctype="multipart/form-data">
                 <input type="hidden" value="{{blog.id}}" name="id">
                 <div class="mb-3">
                     <input type="text" placeholder="titulo" name="titulo" class="form-control" value="{{blog.titulo}}">
